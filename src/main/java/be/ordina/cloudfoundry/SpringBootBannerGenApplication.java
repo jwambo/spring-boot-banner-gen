@@ -26,8 +26,8 @@ public class SpringBootBannerGenApplication {
         return messageSource;
     }
 
-    @Bean
-    public Validator localValidatorFactoryBean() {
-        return new LocalValidatorFactoryBean();
-    }
+//    @Bean
+//    public Validator localValidatorFactoryBean() {
+//        return new LocalValidatorFactoryBean();
+//    }
 }
