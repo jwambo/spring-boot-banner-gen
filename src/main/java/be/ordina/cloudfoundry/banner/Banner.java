@@ -1,9 +1,9 @@
 package be.ordina.cloudfoundry.banner;
 
+import java.awt.Color;
+
 import lombok.Getter;
 import lombok.Setter;
-
-import java.awt.*;
 
 @Getter
 @Setter

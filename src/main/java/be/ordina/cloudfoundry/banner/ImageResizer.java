@@ -1,9 +1,9 @@
 package be.ordina.cloudfoundry.banner;
 
-import org.springframework.stereotype.Component;
-
-import java.awt.*;
+import java.awt.Image;
 import java.awt.image.BufferedImage;
+
+import org.springframework.stereotype.Component;
 
 @Component
 public class ImageResizer {

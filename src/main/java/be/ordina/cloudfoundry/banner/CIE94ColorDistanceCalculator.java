@@ -1,9 +1,9 @@
 package be.ordina.cloudfoundry.banner;
 
-import org.springframework.stereotype.Component;
-
-import java.awt.*;
+import java.awt.Color;
 import java.awt.color.ColorSpace;
+
+import org.springframework.stereotype.Component;
 
 /**
  * Computes the CIE94 distance between two COLORS.

@@ -1,10 +1,7 @@
 package be.ordina.cloudfoundry.controller;
 
-import be.ordina.cloudfoundry.banner.Banner;
-import be.ordina.cloudfoundry.banner.BannerGenerator;
-import be.ordina.cloudfoundry.banner.BannerOptions;
-import be.ordina.cloudfoundry.validation.UploadValidator;
-import lombok.extern.slf4j.Slf4j;
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,7 +12,11 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import javax.validation.Valid;
+import be.ordina.cloudfoundry.banner.Banner;
+import be.ordina.cloudfoundry.banner.BannerGenerator;
+import be.ordina.cloudfoundry.banner.BannerOptions;
+import be.ordina.cloudfoundry.validation.UploadValidator;
+import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @Controller
@@ -31,7 +32,7 @@ public class BannerController {
     }
 
     @RequestMapping(method = RequestMethod.GET)
-    public String show(@SuppressWarnings("UnusedParameters") BannerOptions bannerOptions) {
+    public String show(BannerOptions bannerOptions) {
         return "banner";
     }
 

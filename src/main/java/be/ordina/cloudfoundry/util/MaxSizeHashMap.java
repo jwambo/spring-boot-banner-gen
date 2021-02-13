@@ -11,7 +11,11 @@ import java.util.Map;
  */
 public class MaxSizeHashMap<K, V> extends LinkedHashMap<K, V> {
 
-    private final int maxSize;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private final int maxSize;
 
     public MaxSizeHashMap(final int maxSize) {
         this.maxSize = maxSize;

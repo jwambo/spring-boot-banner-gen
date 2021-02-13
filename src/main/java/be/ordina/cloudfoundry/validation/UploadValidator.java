@@ -1,9 +1,10 @@
 package be.ordina.cloudfoundry.validation;
 
-import be.ordina.cloudfoundry.banner.BannerOptions;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 import org.springframework.web.multipart.MultipartFile;
+
+import be.ordina.cloudfoundry.banner.BannerOptions;
 
 public class UploadValidator implements Validator {
 

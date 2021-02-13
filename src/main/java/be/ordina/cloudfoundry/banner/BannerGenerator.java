@@ -1,17 +1,19 @@
 package be.ordina.cloudfoundry.banner;
 
-import be.ordina.cloudfoundry.util.MaxSizeHashMap;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-import org.springframework.web.multipart.MultipartFile;
-
-import javax.imageio.ImageIO;
-import java.awt.*;
+import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+
+import javax.imageio.ImageIO;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
+
+import be.ordina.cloudfoundry.util.MaxSizeHashMap;
+import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @Service

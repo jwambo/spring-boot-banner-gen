@@ -1,8 +1,8 @@
 package be.ordina.cloudfoundry.banner;
 
-import org.springframework.stereotype.Component;
+import java.awt.Color;
 
-import java.awt.*;
+import org.springframework.stereotype.Component;
 
 @Component
 public class LuminanceCalculator {
